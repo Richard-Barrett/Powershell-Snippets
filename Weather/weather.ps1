@@ -23,3 +23,5 @@ function Country {
      )
      Write-Output "Country nanme $Name was supplied"
  }
+
+(curl http://wttr.in/"$City,$State-Province" -UserAgent "curl" ).Content
